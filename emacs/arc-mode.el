@@ -16,7 +16,7 @@
     (,(regexp-opt
        '("IF" "THEN" "ELIF" "ELSE" "WHILE" "FOR" "IN"
          "END" "FN" "VAR" "RETURN" "IMPORT"
-         "TRY" "CATCH" "BREAK" "CONTINUE")
+         "TRY" "CATCH" "BREAK" "CONTINUE" "CLASS")
        'words)
      . font-lock-keyword-face)
 
