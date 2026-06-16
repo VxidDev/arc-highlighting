@@ -5,7 +5,7 @@ endif
 syntax case ignore 
 
 " Keywords
-syntax keyword arcKeyword IF THEN ELIF ELSE WHILE END FN VAR RETURN IMPORT TRY CATCH FOR CONTINUE BREAK IN CLASS TRUE FALSE
+syntax keyword arcKeyword IF THEN ELIF ELSE WHILE END FN VAR RETURN IMPORT TRY CATCH FOR CONTINUE BREAK IN CLASS TRUE FALSE OR AND NOT 
 
 " Functions 
 syntax match arcFunction /\v[a-zA-Z_][a-zA-Z0-9_]*\ze\s*\(/
