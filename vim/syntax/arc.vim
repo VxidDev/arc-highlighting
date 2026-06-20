@@ -17,6 +17,10 @@ syntax match arcNumber /\v\d+(\.\d+)?/
 syntax match arcEscape /\\[ntr"\\]/ contained
 syntax region arcString start=/"/ skip=/\\"/ end=/"/ contains=arcEscape
 
+" Characters
+syntax match arcCharEscape /\\./ contained
+syntax region arcChar start=/'/ end=/'/ contains=arcCharEscape
+
 " Operators
 syntax match arcOperator /[+\-*/^=<>!]+/
 
@@ -31,5 +35,7 @@ highlight link arcNumber Number
 highlight link arcString String
 highlight link arcOperator Operator
 highlight link arcEscape SpecialChar
+highlight link arcChar Character
+highlight link arcCharEscape SpecialChar
 
 let b:current_syntax = "arc"
